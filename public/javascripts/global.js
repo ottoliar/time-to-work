@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var employeeList = [];
 var employeeSchedule;
 var scheduleKey = null;
@@ -135,7 +134,6 @@ function prepareTable(callback) {
 						var date = String(key);
 						if (!isInArray(week, key)) {
 							week.push(key);
-=======
 (function() {
 
 	"use strict";
@@ -278,12 +276,10 @@ function prepareTable(callback) {
 							if (!isInArray(week, prop)) {
 								week.push(prop);
 							}
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
 						}
 					}
 				}
 			}
-<<<<<<< HEAD
 		}
 		// Ensure dateString array is sorted
 		week.sort(function(a, b) {
@@ -422,8 +418,6 @@ function createEditableCells() {
 		}
 	});
 };
-
-=======
 			// Ensure dateString array is sorted
 			week.sort(function(a, b) {
 				return decodeDate(a) - decodeDate(b);
@@ -532,4 +526,3 @@ function createEditableCells() {
 	};
 	
 })();
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
