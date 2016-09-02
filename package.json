@@ -1,0 +1,41 @@
+{
+  "name": "time-to-work",
+  "version": "1.0.0",
+  "description": "Website for schedule",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "start":"node app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ottoliar/time-to-work.git"
+  },
+  "engines": {
+    "node":"0.10.32"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ottoliar/time-to-work/issues"
+  },
+  "homepage": "https://github.com/ottoliar/time-to-work",
+  "dependencies": {
+    "binary-search-tree": "^0.2.4",
+    "csurf": "^1.8.3",
+    "express-stormpath": "^1.0.5",
+    "forms": "^1.1.1",
+    "jade": "^1.11.0",
+    "xtend": "^4.0.0",
+    "express": "^4.13.1",
+    "express-stormpath": "^1.0.5",
+    "forms": "^1.1.1",
+    "jade": "^1.11.0",
+    "mailgun": "^0.5.0",
+    "mongodb": "^2.0.39",
+    "multer": "^1.0.1",
+    "xlsx": "^0.8.0",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {}
+}
