@@ -9,11 +9,10 @@ var Mailgun = require('mailgun').Mailgun;
 var mg = new Mailgun('key-0ee8ffde132bab0666d733b80f46b6a4');
 var router = express.Router();
 
-<<<<<<< HEAD
 if ((typeof alert) === 'undefined') {
 	global.alert = function(message) {
 		console.log(message);
-=======
+
 /* Takes in the Excel sheet and rips meaningful data from it, storing the data
 in cellDateHash and employeeSchedule. */
 function extractData(sheet, employeeSchedule, cellDateHash, currentEmployees) {
@@ -87,7 +86,6 @@ function extractData(sheet, employeeSchedule, cellDateHash, currentEmployees) {
 				employeeIsolated[newProperty] = cellAsString;
 			}
 		}
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
 	}
 }
 
@@ -160,20 +158,18 @@ router.post('/', excel_upload, function(req, res) {
 		// Convert the Excel data to JSON 
 		var workbook = xlsx.readFile(String(filePath));
 		var sheet_name_list = workbook.SheetNames;
-<<<<<<< HEAD
 		var weekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 		// Current employee that is being modified inside of employee Object
 		var employeeBeingModified;
 		var currentRow;
 		var employeeRow = null;
-=======
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
+
 		/* Iterate through the cells in the worksheet, finding the cell addresses
 		that contain the dates.  Save date-containing addresses in the hashmap to ensure that
 		employee schedule information will be as accurate as possible. */
 		sheet_name_list.forEach(function(y) {
 			var sheet = workbook.Sheets[y];
-<<<<<<< HEAD
+
 			for (cell in sheet) { 
 				var cellAsString = String(sheet[cell].v);
 				var cellAddress = String(cell);
@@ -236,9 +232,8 @@ router.post('/', excel_upload, function(req, res) {
 					}
 				}
 			}
-=======
 			extractData(sheet, employeeSchedule, cellDateHash, currentEmployees);
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
+
 			insert(employeeSchedule);
 		});
 	};

@@ -27,11 +27,8 @@ block content
             span.icon-bar
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-<<<<<<< HEAD
             unless user.email == "chipotlecorona@gmail.com"
-=======
             if user.privilege == 'Enforced'
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
                   | Upload New 
@@ -60,17 +57,14 @@ block content
     #headerRow
       center
         h1 Weekly Schedule
-<<<<<<< HEAD
         if user.email == "chipotlecorona@gmail.com"
           h3#role Role: Crew
         else
           h3#role Role: Manager
-=======
         if user.privilege == 'Enforced'
           h3#role Logged in as: Manager (Click to make edits to Schedule)
         else
           h3#role Logged in as: Crew
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
         a.btn.btn-danger.btn-sm(id="viewSchedule", href="#weeklyView") View Latest Schedule
     #weeklyView
       center
@@ -82,8 +76,5 @@ block content
           #footer-text.panel-footer 
             center Copyright 2015 Robert Ottolia
             center
-<<<<<<< HEAD
               a(href="http://github.com/ottoliar") GitHub
-=======
               a(href="http://github.com/ottoliar/time-to-work") GitHub
->>>>>>> 65c5780ed2c99c1109b223c6aa5ba589e422d07b
