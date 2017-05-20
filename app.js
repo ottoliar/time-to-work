@@ -15,6 +15,7 @@ var dbMain;
 MongoClient.connect('mongodb://localhost:27017/work', function(err, db) {
 	if (err) throw err;
 MongoClient.connect(uri, function(err, db) {
+	// var foo = bar
 	if (err) console.log(err);
 	dbMain = db;
 });
